@@ -1,0 +1,13 @@
+#menu{
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(84, 92, 100);
+}
+#contentBody{
+    float: left;
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    
+}

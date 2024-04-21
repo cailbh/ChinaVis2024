@@ -1,0 +1,243 @@
+body {
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scrollbar-width: none !important;
+  }
+}
+
+#root {
+  scrollbar-width: none;
+  height: var(--heightStyle);
+}
+
+#head {
+  /* position: absolute; */
+  /* top:0px; */
+  width: 100%;
+  height: 60px;
+  /* background-color: rgba(0, 13, 87, 0.1); */
+}
+#allBody {
+  float: left;
+  height: calc(100% - 60px);
+  width: 100%;
+  background-color: rgb(200, 200, 200);
+}
+
+#left {
+  scrollbar-width: none;
+  float: left;
+  width: 0%;
+  height: 100%;
+}
+
+#controlPanel {
+  scrollbar-width: none;
+  float: left;
+  width: 100%;
+  height: 45%;
+}
+
+.panelHead {
+  float: left;
+  background-color: rgb(247, 247, 247);
+  width: 100%;
+  padding-left: 15px;
+  /* border: solid rgb(200,200,200) 2px; */
+  /* border-radius: 15px; */
+  color: rgb(122, 133, 147);
+  font-size: 24px;
+  line-height: 150%;
+  height: 40px;
+}
+
+.panel {
+  float: left;
+  width: calc(100% - 40px);
+  height: 100%;
+  padding: 0px;
+  padding-top: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  border: solid rgb(200, 200, 200) 2px;
+  border-radius: 10px;
+  height: calc(100% - 20px);
+}
+
+.assitPanel {
+  float: left;
+  width: calc(100% - 40px);
+  height: 100%;
+  padding: 0px;
+  padding-top: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  /* border: solid rgb(200,200,200) 2px;
+    border-radius: 15px; */
+  height: calc(100% - 20px);
+}
+
+.panelBody {
+  float: left;
+  width: 100%;
+  height: calc(100% - 40px);
+  padding: 5px;
+  /* border: solid rgb(200,200,200) 2px;
+    border-radius: 15px;
+    height: calc(100% - 20px); */
+}
+
+#videoContainer {
+  scrollbar-width: none;
+  /* float: left; */
+  /* width: 50%;
+    height: 70%; */
+  width: 85%;
+  height: 100%;
+  position: relative;
+  
+  background-color: rgb(152, 152, 152);
+  /* background-color: #c32; */
+}
+
+#editPanel {
+  scrollbar-width: none;
+  /* float: left; */
+  position: absolute;
+  top: 733px;
+  right: 604px;
+  width: 489px;
+  height: 685px;
+  z-index: 1000;
+}
+
+#overviewPanel {
+  scrollbar-width: none;
+  float: left;
+  width: 100%;
+  height: 55%;
+}
+
+#externalContainer {
+  scrollbar-width: none;
+  float: left;
+  width: 22%;
+  height: calc(25% + 0px);
+  position: absolute;
+  right: calc(18% + 7px);
+  top: calc(65% - 0px);
+  z-index: 100;
+  background: rgba(0,0,0,0);
+}
+
+#graphContainer {
+  scrollbar-width: none;
+  float: left;
+  width: calc(85% - 6px);
+  height: calc(22% - 0px);
+  position: absolute;
+  top: 0px;
+  z-index: 1000;
+  left: 3px;
+  background-color: rgb(152, 152, 152);
+}
+
+/* .panel{
+    margin: 5px;
+    /* background-color: rgba(61, 72, 104, 0.521); */
+/* border: 2px solid rgb(61, 72, 104); */
+/* box-shadow: 0px 2px 2px 5px #565656aa; 
+    border-radius: 5px;
+  } */
+
+.card {
+  height: 100%;
+}
+
+.card-body {
+  overflow-y: scroll;
+  /* flex: 1 1 auto;
+    padding: 0.1rem 0.1rem; */
+}
+
+#Container {
+  scrollbar-width: none;
+  height: var(--heightStyle);
+}
+
+#Container-back {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  /* background-image:-webkit-radial-gradient(center,rgba(14, 31, 57, 0),rgba(14, 31, 57, 0.5),rgb(0, 0, 0)); */
+}
+
+.ChartHead {
+  width: 100%;
+  height: 40px;
+
+  background: rgba(12, 46, 56, 0.8);
+  box-shadow: inset 0px 0px 10px 2px #83FFFD;
+  color: #83FFFD;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
+  font-variant: tabular-nums;
+  font-feature-settings: "tnum";
+  font-family: SourceHanSerifCN-Heavy, SourceHanSerifCN;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.ChartBody {
+  width: 100%;
+  height: calc(100% - 40px);
+  border: 1px solid rgb(65, 255, 250);
+  background: rgba(12, 46, 56, 0.8);
+}
+
+.graphTran-enter-active,
+.graphTran-leave-active {
+  transition: all 1s ease;
+  max-width: 100%;
+}
+
+.graphTran-enter,
+.graphTran-leave-to {
+  /* width: 0;           */
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.externalTran-enter-active,
+.externalTran-leave-active {
+  transition: all 1s ease;
+  max-width: 100%;
+}
+
+.externalTran-enter,
+.externalTran-leave-to {
+  /* width: 0;           */
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.homeBottomTran-enter-active,
+.homeBottomTran-leave-active {
+  transition: all .9s ease;
+  max-height: 100%;
+}
+
+.homeBottomTran-enter,
+.homeBottomTran-leave-to {
+  /* height: 0;           */
+  opacity: 0;
+  transform: translateY(200px);
+}

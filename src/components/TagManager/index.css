@@ -1,0 +1,53 @@
+.TagManagerPanel{
+  width: 100%;
+  height: 100%;
+  /* position: fixed; */
+  /* z-index: 100; */
+  /* left: 0;
+    top: 0; */
+}
+
+.buildingLabel {
+  width: 600px;
+  height: 600px;
+  background: rgba(0, 0, 0, 0) url(/textures/label.png);
+  background-size: cover;
+}
+
+.chartTooltip {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  /* padding-left: 10px;
+  padding-top: -10px;
+  padding-bottom: -10px; */
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); */
+  /* pointer-events: none; */
+  display: none;
+}
+.chartTooltip.hidden {
+}
+.chartTooltip p {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+}
+.tagClass{
+  margin: 2px;
+  color: white;
+}
+.el-table .choose-row {
+  background: #f0f9eb;
+}
+.tagEditDiv{
+  width: 100%;
+  height: 100%;
+  background: blue;
+}
+.returnHomeBut{
+  float: right;
+  margin: 7px;
+}

@@ -1,0 +1,111 @@
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4c4949;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%; */
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(16, 16, 16);
+    font-style: normal;
+    background-color: #ffffff;
+    transition: all 0.3s;
+    border-radius: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.btn:hover::before {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#tools {
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 450px);
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tools:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#tools img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#tools-content {
+    margin-top: 10px;
+}
+
+#tools-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#tools-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    width: 300px;
+    height: 100%;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
